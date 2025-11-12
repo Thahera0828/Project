@@ -115,6 +115,7 @@ h3{
         height: 150px;
         object-fit: cover;
       border-radius: 10px;
+      display: block;
     }
     .play-btn {
       position: absolute;
@@ -133,11 +134,19 @@ h3{
       opacity: 0;
       transform: scale(0.8);
       transition: all 0.3s ease;
+      z-index: 2;
+      cursor: pointer;
+      pointer-events: auto;
     }
     .card:hover .play-btn {
       opacity: 1;
       transform: scale(1);
     }
+    .card-body{
+      position: relative;
+  z-index: 1; 
+    color: white;
+}
     audio {
       display: none;
     }
@@ -176,9 +185,7 @@ h3{
     scrollbar-width: none;
     background-color: black;
 }
-.card-body{
-  color: white;
-}
+
 .library{
    background-color: black;
 
