@@ -1,0 +1,237 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 80px;
+  background-color: black;
+}
+ .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+   z-index: 1000; 
+  background-color: rgb(1, 130, 38);
+  display: flex;
+  /* gap: 600px; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 30px; */
+}
+nav {
+  display: flex;  
+  background-color:  rgb(1, 130, 38);
+  justify-content: start;           
+  align-items: center;
+  gap: 10px; 
+  padding: 10px;  
+  /* padding-left: 140px;*/
+}
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav div i {
+  transition: transform 0.3s ease;
+}
+nav div:hover i {
+  transform: scale(1.05);   
+  color: white;            
+}
+nav div:hover span,
+nav div:hover b,
+nav div:hover {
+  color: white;            
+}
+#menu-toggle {
+  display: none;
+}
+.box1{
+  display: flex;
+    width: 12vw;
+    height: 12vh;
+    /* border: 1px solid white; */
+    /* margin-top: 15px; */
+    /* margin-left: 5px; */
+    border-radius: 50%;
+}
+img{
+    width: 100%;
+}
+.button {
+  display: flex;
+  gap: 20px;
+  color: rgb(168, 166, 166);
+} 
+h3{
+    color: rgb(237, 233, 233);
+}
+.row{
+  display: flex;
+  /* gap: 20px; */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.song-scroll {
+  scrollbar-width: none;      
+   -ms-overflow-style: none; 
+}
+
+.song-scroll::-webkit-scrollbar {
+  display: none;             
+}
+ .card {
+      position: relative;
+      overflow: hidden;
+      background-color: black;
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s; 
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px gray;
+    }
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      border-radius: 10px;
+    }
+    .play-btn {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgb(9, 137, 9);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.3s ease;
+    }
+    .card:hover .play-btn {
+      opacity: 1;
+      transform: scale(1);
+    }
+    audio {
+      display: none;
+    }
+    h5{
+      padding-left: 50px;
+       color: rgb(237, 233, 233);
+       transition: transform  0.3s ease; 
+    }
+     h6 {
+      padding-left: 50px;
+      color: gray;
+      transition: transform  0.3s ease; 
+    } 
+     h5:hover {
+      cursor: pointer;     
+       transform: scale(1.05); 
+    }
+     h6:hover {
+      cursor: pointer;  
+      color: white;   
+       transform: scale(1.05); 
+    }
+.side{
+  display: flex;
+  gap: 100px;
+   /* overflow: scroll;
+    scrollbar-width: none; */
+  /* grid-column: 1/2;
+  grid-row: 2/3; */
+   background-color: black;
+ 
+}
+.body{
+  /* position: fixed; */
+    overflow: scroll;
+    scrollbar-width: none;
+    background-color: black;
+}
+.card-body{
+  color: white;
+}
+.library{
+   background-color: black;
+
+}
+.library1{
+  width: 300px;
+  height: 100px;
+   background-color: black;
+  /* border: 2px solid white */
+}
+p{
+  color: white;
+}
+.library2{
+  width: 300px;
+  height: 200px;
+   background-color: black;
+  /* border: 2px solid white */
+}
+
+ @media (max-width: 768px) {
+      .side {
+        display: none; 
+      }
+      
+    }
+.menu-icon {
+  display: none;      
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;                     
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #181818;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: flex;                    
+  }
+  .menu-icon {
+    display: block;                     
+  }
+  .input-group {
+    flex: 1;
+    margin: 0 10px;
+  }
+}

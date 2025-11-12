@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+     <div class="container">
+    <div class="header">
+       <div class="box1" style="color: white; margin-left: 30px; margin-top: 10px; font-size: xx-large;"><b>Spotify</b><img src="https://www.logo.wine/a/logo/Spotify/Spotify-Icon-Logo.wine.svg" alt="" ></div>
+
+  <div class="input-group" style="max-width: 350px; ">
+  <span class="input-group-text bg-success text-white border-0 rounded-start-pill">
+    <i class="bi bi-search"></i>
+  </span>
+  <input type="text" class="form-control border-0 rounded-end-pill" placeholder="What do you want to play..."></div>
+<!-- </div> -->
+     <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon"><i class="bi bi-list"></i></label>
+      <nav>
+      <div><i class="bi bi-house-door-fill"></i><span>Home</span></div>
+      <div><b>Explore Premium</b></div>
+      <div><i class="bi bi-arrow-down-circle"></i><span>Install App</span></div>
+      <div><i class="bi bi-bell" style="font-style: normal;">Subscribe</i></div>
+      <div><i class="bi bi-people-fill" style="font-style: normal;">Friend Activity</i></div>
+      <div><i class="bi bi-p-circle" style="font-style: normal;">Paaru</i></div>
+    </nav>
+    </div>
+    </div>
+    <!-- _____________________________________________________________________________ -->
+    <div class="body">
+       <div class="d-grid gap-2 d-md-block">
+ <button type="button" class="btn btn-success" style="margin-top: 15px;">All</button>
+ <button type="button" class="btn btn-success" style="margin-top: 15px;">Music</button>
+ <button type="button" class="btn btn-success" style="margin-top: 15px;">Podcast</button>
+  <h3 >🎵 Trending Songs</h3>
+  <div class="song-scroll d-flex flex-row overflow-auto pb-3" style="gap: 1rem;">
+    <!-- Song 1 -->
+    
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://cdn.gulte.com/wp-content/uploads/2025/10/meesala-pilla-song.jpg" class="img-fluid rounded" alt="song-1">
+        <button class="play-btn" data-audio="song1">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song1" src="./Meesaala Pilla(KoshalWorld.Com).mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Meesala Pilla</h5>
+        </div>
+      </div>
+  
+        <!-- song-2 -->
+   
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://pendujatt.com.se/uploads/album/singari-from-dude-semviii.webp"class="img-fluid rounded" alt="song-2">
+        <button class="play-btn" data-audio="song2">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song2" src="./Singari (Telugu)(KoshalWorld.Com).mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Singari</h5>
+      
+        </div>
+      </div>
+    
+    <!-- song-3 -->
+    
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://c.saavncdn.com/532/They-Call-Him-OG-Telugu-2025-20250924124333-500x500.jpg" class="img-fluid rounded" alt="Song 3">
+         <button class="play-btn" data-audio="song3">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song3" src="./Fire Storm.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">FireStrom</h5>
+      
+        </div>
+      </div>
+   
+    <!-- song-4 -->
+      
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://static.toiimg.com/thumb/msid-123540093,width-1280,height-720,imgsize-736856,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" class="img-fluid rounded" alt="Song 4">
+         <button class="play-btn" data-audio="song4">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song4" src="./Suvvi Suvvi.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Suvvi Suvvi</h5>
+      
+        </div>
+      </div>
+    
+    <!-- song-5 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://c.saavncdn.com/490/Monica-From-Coolie-Telugu-Telugu-2025-20250711092828-500x500.jpg" class="img-fluid rounded" alt="Song 5">
+         <button class="play-btn" data-audio="song5">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song5" src="./Monica.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Mounica</h5>
+        </div>
+      </div>
+    <!-- song-6 -->
+   
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHO8gfYv_ZYZIA2b3JpkPeNhJt8TgTepCofw&s" class="img-fluid rounded" alt="Song 6">
+         <button class="play-btn" data-audio="song6">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song6" src="./litile Hearts Khatyayani Song.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Katyayini</h5>
+        </div>
+      </div>
+    
+    <!-- song-7 -->
+   
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://c.saavncdn.com/133/Prema-Velluva-From-Hit-3-Telugu-Telugu-2025-20250323083324-500x500.jpg" class="img-fluid rounded" alt="Song 7">
+         <button class="play-btn" data-audio="song7">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song7" src="./Prema Velluva.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Prema velluva</h5>
+        </div>
+      </div>
+      </div>
+    
+    <!-- ____________________________________ -->
+     <h3 >Recommended songs</h3>
+     <div class="song-scroll d-flex flex-row overflow-auto pb-3" style="gap: 1rem;">
+     <!-- song-8 -->
+
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://pendujatt.com.se/uploads/album/businessman-thaman-s.webp" class="img-fluid rounded" alt="Song 8">
+         <button class="play-btn" data-audio="song8">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song8" src="./Sir Osthara-SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Sir Osthara</h5>
+        </div>
+      </div>
+    
+       <!-- song-9 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://pendujatt.com.se/uploads/album/mirapakay-thaman-s.webp" class="img-fluid rounded" alt="Song 9">
+         <button class="play-btn" data-audio="song9">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song9" src="./Dhinaku Dhin-SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Dhinaku Dhin Jiya</h5>
+        </div>
+      </div>
+      <!-- song-10 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://a10.gaanacdn.com/gn_img/albums/VdNW0Mbo5e/dNW0XPRQWo/size_m.webp" class="img-fluid rounded" alt="Song 10">
+         <button class="play-btn" data-audio="song10">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song10" src="./Oh Priya Priya - SenSongsmp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">O Priya Priya</h5>
+        </div>
+      </div>
+      <!-- song-11 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://c.saavncdn.com/959/Chirutha-2007-500x500.jpg" class="img-fluid rounded" alt="Song 11">
+         <button class="play-btn" data-audio="song11">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song11" src="./Endhuko Pichi Pichi-SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Endhuko Pichi Pichi </h5>
+        </div>
+      </div>
+       <!-- song-12 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjDJzX4NZA9aRITljkzQA0Sndlzrh7gaMJGIXmIjUw6COQmS1Ab0rJ_l9tWBiREBSw5Ng&usqp=CAU"  class="img-fluid rounded" alt="Song 12">
+         <button class="play-btn" data-audio="song12">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song12" src="./Manasa Nevunde Chote-SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Manasa </h5>
+        </div>
+      </div>
+       <!-- song-13 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://c.saavncdn.com/292/Radhe-Shyam-Telugu-2022-20220312141038-500x500.jpg" class="img-fluid rounded" alt="Song 13">
+         <button class="play-btn" data-audio="song13">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song13" src="./Prema Velluva.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Nagumomu Tharale </h5>
+        </div>
+      </div>
+       <!-- song-14 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX3n-fqSmNefCx202toD8CXVSmLbjmZWZ7rg&s" class="img-fluid rounded" alt="Song 14">
+         <button class="play-btn" data-audio="song14">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song14" src="./Chakori-SenSongsMp3.Com.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">chakori</h5>
+        </div>
+      </div>
+      </div>
+      <!-- ----------------------------------- -->
+      <h3>Old is Gold</h3>
+       <div class="song-scroll d-flex flex-row overflow-auto pb-3" style="gap: 1rem;">
+          <!-- song-15 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://a10.gaanacdn.com/gn_img/albums/21GWwrR3pk/1GWwkXXzWp/size_l.jpg" class="img-fluid rounded" alt="Song 15">
+         <button class="play-btn" data-audio="song15">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song15" src="./Suvvee Suvvee - SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Suvvee Suvvee</h5>
+        </div>
+      </div>
+      <!-- song-16 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://a10.gaanacdn.com/gn_img/albums/9En3pqeWXD/En3pzdEkbX/size_l.jpg" class="img-fluid rounded" alt="Song 16">
+         <button class="play-btn" data-audio="song16">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song16" src="./Materani Chinnadani - SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Mate Rani</h5>
+        </div>
+      </div>
+      <!-- song-17 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://a10.gaanacdn.com/gn_img/albums/7rVW1Rbk56/rVW1EQZLWk/size_m.jpg" class="img-fluid rounded" alt="Song 17">
+         <button class="play-btn" data-audio="song17">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song17" src="./01_-_Hello_Guru - SenSongsMp3.co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Hello Guru </h5>
+        </div>
+      </div>
+      <!-- song-18 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://i.scdn.co/image/ab67616d0000b2732efbd9c373d9d9ae71d59414" class="img-fluid rounded" alt="Song 18">
+         <button class="play-btn" data-audio="song18">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song18" src="./03 - Naa Cheli Rojave - SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Na Cheli Rojave</h5>
+        </div>
+      </div>
+       <!-- song-19 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/64474850a1bca1a926b5a60d201c2a1544bc7de1ff9640021c791d80783c0ab4.jpg" class="img-fluid rounded" alt="Song 19">
+         <button class="play-btn" data-audio="song19">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song19" src="./02 Jaamu Rathiri - SenSongsMp3.co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Jaamu Rathiri</h5>
+        </div>
+      </div>
+      <!-- song-20 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://a10.gaanacdn.com/gn_img/albums/koMWQBbqLE/oMWQDryA3q/size_m.webp" class="img-fluid rounded" alt="Song 20">
+         <button class="play-btn" data-audio="song20">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song20" src="./02 Taralirada Thane Vasantham - SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Tharalirada</h5>
+        </div>
+      </div>
+      <!-- song-21 -->
+      <div class="card text-start" style="width: 190px; flex: 0 0 auto;">
+        <img src="https://c.saavncdn.com/555/Nireekshana-Telugu-1982-500x500.jpg" class="img-fluid rounded" alt="Song 21">
+         <button class="play-btn" data-audio="song21">
+          <i class="bi bi-play-fill"></i>
+        </button>
+        <audio id="song21" src="./Aakasam Yenatido - SenSongsMp3.Co.mp3"></audio>
+        <div class="card-body">
+          <h5 class="card-title">Akasham Yenatido</h5>
+        </div>
+      </div>
+    </div>
+    
+      </div>
+      <div class="side">
+      <div class="library"><p class="fs-3"><b>Library</b><i class="bi bi-plus-circle-fill fs-2 text-success ms-5"></i></p></div>
+      <div class="library1"><p><b>Create Your First playlist:</b></p>
+        <button type="button" class="btn btn-success btn-lg rounded-pill">Create</button></div>
+        <div class="library2"><p><b>Let's Find Some Podcast to Follow </b></p><p>We will keep you updated on new episodes </p>
+        <button type="button" class="btn btn-success btn-lg rounded-pill">Browser Podcast</button></div>
+    </div>
+      <br><br>
+     <!-- ______________________________________________________ -->
+     <h5>Company</h5>
+     <h6 class="headdings">About</h6>
+     <h6 class="headdings">Job</h6>
+     <h6 class="headdings">For The Record</h6>
+     <h5>Communities</h5>
+      <h6>For Artists</h6>
+      <h6>Developers</h6>
+      <h6>Advertising</h6>
+      <h6>Investors</h6>
+      <h6>Vendors</h6>
+      <h5>Spotify Plans</h5>
+      <h6>Premium individual</h6>
+      <h6>Premium Duo</h6>
+      <h6>Premium family</h6>
+      <h6>Premium Student</h6>
+      <h6>Spotify Free</h6>
+  </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script>
+  const playButtons = document.querySelectorAll('.play-btn');
+  const audios = document.querySelectorAll('audio');
+
+  playButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const audioId = button.getAttribute('data-audio');
+      const currentAudio = document.getElementById(audioId);
+      audios.forEach(a => {
+        if (a !== currentAudio) {
+          a.pause();
+          a.currentTime = 0; 
+        }
+      });
+      if (!currentAudio.paused) {
+        currentAudio.pause();
+        button.innerHTML = '<i class="bi bi-play-fill"></i>';
+      } else {
+        currentAudio.play();
+        button.innerHTML = '<i class="bi bi-pause-fill"></i>';
+      }
+      currentAudio.onended = () => {
+        button.innerHTML = '<i class="bi bi-play-fill"></i>';
+      };
+    });
+  });
+</script>
+</body>
+</html>
